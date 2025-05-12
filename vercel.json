@@ -1,17 +1,5 @@
 {
   "version": 2,
-"headers": [
-    {
-      "source": "/(.*).js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
   "builds": [
     {
       "src": "package.json",
@@ -24,5 +12,17 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+"headers": [
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
